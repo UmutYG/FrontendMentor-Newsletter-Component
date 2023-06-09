@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -14,84 +19,123 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    line-height: 1;
     background-color: hsl(235, 18%, 26%);
     color: hsl(235, 18%, 26%);
 }
 
 .container {
-    width: 1000px;
+    max-width: 100rem;
     display: grid;
     grid-template-columns: 1fr auto;
-    margin: 100px auto;
+    margin: 17.7rem auto;
     background-color: white;
-    border-radius: 2rem;
-    
+    border-radius: 35px;
 }
 
 .newsletter-content {
-  padding: 4rem;
+    padding: 6.4rem;
+    font-size: 1.6rem;
 }
 
 .newsletter-title {
-    font-size: 4rem;
+    font-size: 6.4rem;
     color: hsl(234, 29%, 20%);
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 2.4rem;
 }
 
 .newsletter-description {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .newsletter-list {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 1.4rem;
     list-style: none;
-    margin-bottom: 2rem;
+    margin-bottom: 4.8rem;
 }
 
 .newsletter-img-box {
-  padding: 1.5rem;
+    padding: 2.4rem;
 }
 
 .newsletter-img {
-    height: 600px;
+    height: 60rem;
 }
 
 .newsletter-list-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
 }
 
 .label-email {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: hsl(234, 29%, 20%);
-  margin-bottom: 0.6rem;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 0.6rem;
 }
 
 .input-email {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid hsl(231, 7%, 60%);
-  border-radius: 6px;
-  margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    padding: 1.6rem;
+    border: 1px solid rgba(146, 148, 160, 0.5);
+    border-radius: 6px;
+    margin-bottom: 2.4rem;
 }
 
 .btn-submit {
-  display: block;
-  width: 100%;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 6px;
-  background-color: hsl(234, 29%, 20%);
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  color: #fff;
+    display: block;
+    width: 100%;
+    padding: 1.6rem 3.2rem;
+    border: none;
+    border-radius: 9px;
+    background-color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
 
+.btn-submit:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+        rgba(255, 98, 87, 1),
+        rgba(255, 98, 87, 0.8)
+    );
+}
+
+
+/* success case */
+
+.hidden {
+  display: none !important;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  background-color: #fff;
+  padding: 6.4rem;
+  gap: 3.2rem;
+  border-radius: 35px;
+}
+
+.success img {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.success h1 {
+  font-size: 6.4rem;
+}
+
+.success-message {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
